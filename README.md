@@ -15,7 +15,7 @@ train.py
 ## 环境配置
 
 1. WIN 10 or Ubuntu 16.04
-2. **PyTorch > 1.2.0 (may fix ctc loss)**🔥
+2. **PyTorch > 1.2.0 (may fix ctc loss)**
 3. yaml
 4. easydict
 5. tensorboardX
@@ -26,9 +26,7 @@ train.py
 
 1. 数据集打上标签,生成train.txt和val.txt
 
-   ![Image text](images/tmp2E.png)
-
-   图片命名如上图：**车牌号_序号.jpg**
+   图片命名：**车牌号_序号.jpg**
    然后执行如下命令，得到train.txt和val.txt
 
    ```
@@ -61,12 +59,6 @@ python train.py --cfg lib/config/360CC_config.yaml
 python demo.py --model_path saved_model/best.pth --image_path images/test.jpg
                                    or your/model/path
 ```
-
-![Image text](images/test.jpg)
-
-结果是：
-
-![Image text](images/result.jpg)
 
 ## 导出onnx
 
